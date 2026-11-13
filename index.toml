@@ -1,8 +1,52 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/BBEConfig.json"
+hash = "e466d7ea9fb23cc4f48787da679135dc0782ddc9b46e6bafa2e10ac01c47602d"
+
+[[files]]
+file = "config/ExploitPreventer.json"
+hash = "8123780c54ea4b9d0ad0bff68cb35b12ce78131b60617f132d20c68463ed592b"
+
+[[files]]
+file = "config/badoptimizations.txt"
+hash = "9a78f6fee180ae4d08ea99f9eaba3ec00ee06887f1d171152b44f4de3596ee34"
+
+[[files]]
 file = "config/dynamic_fps.json"
 hash = "8eee8d02db942201c59e85a373513a7b906c4c417462374172b9c2d1b7f2997f"
+
+[[files]]
+file = "config/entityculling.json"
+hash = "4a6d510b7e0157027b1cf2022184567fd5387aa09d08db108cb0369ba371ddbe"
+
+[[files]]
+file = "config/fastquit.toml"
+hash = "e85f39867513fe26179ba3cf7a00d343e9642ceaa96e7ea3cde6a1c3aa69dd4e"
+
+[[files]]
+file = "config/ferritecore.mixin.properties"
+hash = "71d5e19e278cb843d92f90a99b8a9772780c62e5611b7c8cc92097cd18399b08"
+
+[[files]]
+file = "config/immediatelyfast.json"
+hash = "351554b5d847acfb0dcdd05a93b5b93f27035178bcbde4d5193b4dc5a5a2f11b"
+
+[[files]]
+file = "config/instapack.properties"
+hash = "03c8496d967c790d03cd88ace927b575f7067f3ce8090397b14235fdad895fbd"
+
+[[files]]
+file = "config/ixeris.toml"
+hash = "c02ede146ae967651ceafba4301bb814674e66ffcfdd078ab14ba251418a0434"
+
+[[files]]
+file = "config/lithium.properties"
+hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "6cdf760d41edbac0cae96db1232a627db75f5d147471e98b0dafdc3d7131865d"
 
 [[files]]
 file = "config/modmenu.json"
@@ -10,7 +54,23 @@ hash = "37733cc7f32963b2e7de3520eb737255f28dd5dae51c10dcaff838eb3afcfd73"
 
 [[files]]
 file = "config/moreculling.toml"
-hash = "a0b2444db1aa65997fd715d0c2a7753f5be302d1304364993260fb7489c1eddb"
+hash = "67607a5470ef7eb605c2e0dd55d6c9982395d8b97050c073049f33ea76810836"
+
+[[files]]
+file = "config/sodium-extra-options.json"
+hash = "899e60614884067b9d08aff20ca1fabe2429e50e914690bd53039a1a1eefd9dd"
+
+[[files]]
+file = "config/sodium-extra.properties"
+hash = "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70"
+
+[[files]]
+file = "config/sodium-mixins.properties"
+hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
+
+[[files]]
+file = "config/sodium-options.json"
+hash = "a254b8f531a8cef6ade6f1b860e80ee4cfbf5fb5905d0963c24b121c4f6518a2"
 
 [[files]]
 file = "mods/badoptimizations.pw.toml"
@@ -124,4 +184,4 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "ce017b8be78218c913028cbc8015aab1c0cb34b6661d7664ecb567acf67bd7b9"
+hash = "8064a2d17932b241e78ffefad3031f46dc74084048b4b28d633b4bdfca6bb7fc"

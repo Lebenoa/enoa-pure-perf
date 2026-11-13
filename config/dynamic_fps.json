@@ -1,5 +1,6 @@
 {
   "idle": {
+    "timeout": 60,
     "condition": "none"
   },
   "battery_tracker": {
@@ -8,7 +9,6 @@
   "download_natives": false,
   "states": {
     "unfocused": {
-      "frame_rate_target": 1,
       "run_garbage_collector": true
     },
     "invisible": {

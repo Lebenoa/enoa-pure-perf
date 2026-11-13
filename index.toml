@@ -14,7 +14,7 @@ hash = "9a78f6fee180ae4d08ea99f9eaba3ec00ee06887f1d171152b44f4de3596ee34"
 
 [[files]]
 file = "config/dynamic_fps.json"
-hash = "62931fff286cc4381819553fef28188e2e0b9fad7a0ac2699016915fce0db0d5"
+hash = "457bdffb6e7ffd545f34dd8c9c9fc36f07d73793c6f8a4f2faecf4fa05d80f47"
 
 [[files]]
 file = "config/entityculling.json"

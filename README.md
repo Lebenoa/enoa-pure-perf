@@ -73,15 +73,16 @@ After export succeeds, import `enoa-pure-perf.mrpack` into a compatible launcher
 
 | Setting | Default |
 |---|---|
+| Graphics preset | **Fast** (vanilla lowest: no smooth lighting/AO, shadows off, particles minimal) |
 | Sneak / Sprint | **Left Ctrl** / **Left Shift** (swapped from vanilla) |
 | FOV | 103° |
-| FOV effects | ~2.29% |
+| FOV effects | Off |
 | GUI scale | 2 |
-| VSync / FPS limit | Off / 200 |
-| Render / simulation distance | 8 / 8 chunks |
-| Mipmap level / clouds | 2 / fast |
+| VSync / FPS limit | Off / 260 |
+| Render / simulation distance | 4 / 5 chunks |
+| Mipmap level / clouds | 0 / off |
 | Screen effects | Off |
-| Mouse sensitivity / damage tilt | 25% / 50% |
+| Mouse sensitivity / damage tilt | 25% / 0% |
 | Auto-jump / pause on lost focus | Off |
 | Advanced item tooltips | On |
 | Master volume | ~14.57% |

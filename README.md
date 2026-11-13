@@ -9,7 +9,7 @@ Prebuilt 26.2 packs are available for [Prism Launcher](https://github.com/Lebeno
 
 ## Features
 
-- Render with Sodium and Iris Shaders; use Nvidium's alternative renderer on supported NVIDIA GPUs when shaders are inactive.
+- Render with Sodium; use Nvidium's alternative renderer on supported NVIDIA GPUs.
 - Use client-side performance mods that stay out of gameplay's way.
 - Export the recorded mod versions to a `.mrpack` or a `.noriskpack` for import into a compatible launcher.
 
@@ -87,7 +87,6 @@ After export succeeds, import `enoa-pure-perf.mrpack` into a compatible launcher
 | Master volume | ~14.57% |
 | Music / ambient volume | Muted |
 | Swap offhand key | Vanilla default |
-| Iris max shadow render distance | 6 |
 
 The pack also ships configs for Dynamic FPS, More Culling, and Mod Menu.
 
@@ -118,8 +117,7 @@ All 23 mods, grouped by purpose. The Side column reproduces this pack's metadata
 | [Ixeris](https://modrinth.com/mod/p8RJPJIC) | client | Reduces input-polling overhead, especially with high-polling-rate mice on Windows. |
 | [InstaPack](https://www.curseforge.com/minecraft/mc-mods/instapack) | both | Optimizes resource reloads, skips unchanged server packs, and caches packs to avoid repeat downloads. |
 | **Rendering & visuals** | | |
-| [Iris Shaders](https://modrinth.com/mod/YL57xq9U) | client | Loads OptiFine-style shader packs alongside Sodium. |
-| [Nvidium](https://modrinth.com/mod/SfMw2IZN) | client | Replaces Sodium's terrain renderer on mesh-shader-capable NVIDIA GPUs (GTX 16-series and supported newer cards); disables itself while Iris shaders are active. |
+| [Nvidium](https://modrinth.com/mod/SfMw2IZN) | client | Replaces Sodium's terrain renderer on mesh-shader-capable NVIDIA GPUs (GTX 16-series and supported newer cards). |
 | **Interface & QoL** | | |
 | [Mod Menu](https://modrinth.com/mod/mOgUt4GM) | client | Browse installed mods and open their config screens from the title screen. |
 | [Reese's Sodium Options](https://modrinth.com/mod/Bh37bMuy) | client | Reorganized, searchable Sodium video settings screen. |

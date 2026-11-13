@@ -5,10 +5,6 @@ file = "config/dynamic_fps.json"
 hash = "8eee8d02db942201c59e85a373513a7b906c4c417462374172b9c2d1b7f2997f"
 
 [[files]]
-file = "config/iris.properties"
-hash = "e139dbd0861e307538a058dc0e8abed0fbe4e3d761be91e796d9b56e27db0eed"
-
-[[files]]
 file = "config/modmenu.json"
 hash = "37733cc7f32963b2e7de3520eb737255f28dd5dae51c10dcaff838eb3afcfd73"
 
@@ -69,11 +65,6 @@ metafile = true
 [[files]]
 file = "mods/instapack.pw.toml"
 hash = "501fc0dc6feb3c9d26351f9508a7715f91ad1c5a9dddef34c94088e94fa5c97e"
-metafile = true
-
-[[files]]
-file = "mods/iris.pw.toml"
-hash = "3feb739dd8e383dbbf01e69a19c4782e64e96995734162173a7a19d8b0c1075e"
 metafile = true
 
 [[files]]

@@ -8,14 +8,13 @@
   "download_natives": false,
   "states": {
     "unfocused": {
-      "frame_rate_target": 30,
       "run_garbage_collector": true
     },
     "invisible": {
       "run_garbage_collector": true
     },
-    "unplugged": {
-      "frame_rate_target": -1
+    "abandoned": {
+      "frame_rate_target": 1
     }
   }
 }

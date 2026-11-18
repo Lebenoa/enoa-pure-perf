@@ -22,9 +22,9 @@ if (-not (Test-Path (Join-Path $here "pack.toml"))) {
     $tmp = Join-Path ([System.IO.Path]::GetTempPath()) ([System.Guid]::NewGuid().ToString("N"))
     New-Item -ItemType Directory -Path $tmp | Out-Null
     $zip = Join-Path $tmp "pack.zip"
-    Invoke-WebRequest -Uri "https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/master.zip" -OutFile $zip
+    Invoke-WebRequest -Uri "https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip" -OutFile $zip
     Expand-Archive -Path $zip -DestinationPath $tmp
-    $extracted = Join-Path $tmp "enoa-pure-perf-master"
+    $extracted = Join-Path $tmp "enoa-pure-perf-26.3"
     # Work inside the extracted checkout for the rest of the run.
     Set-Location $extracted
 } else {
@@ -51,8 +51,8 @@ if ($existing) {
 
 # 2. Export the pack from this repo's checkout.
 Write-Host "Exporting .mrpack..."
-& $packwiz modrinth export -o enoa-pure-perf.mrpack
+& $packwiz modrinth export --no-bundle -o enoa-pure-perf-26.3.2.mrpack
 if ($LASTEXITCODE -ne 0) { throw "packwiz export failed." }
 
-Write-Host "`nDone: $PWD\enoa-pure-perf.mrpack" -ForegroundColor Green
+Write-Host "`nDone: $PWD\enoa-pure-perf-26.3.2.mrpack" -ForegroundColor Green
 Write-Host "Import it into a Modrinth-compatible launcher (Prism Launcher, ATLauncher, etc)."

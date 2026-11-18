@@ -74,37 +74,37 @@ hash = "a254b8f531a8cef6ade6f1b860e80ee4cfbf5fb5905d0963c24b121c4f6518a2"
 
 [[files]]
 file = "mods/badoptimizations.pw.toml"
-hash = "1532e60a1550570e420d1e48daf43a62eff8d1c299315e95fd3c6582671de5aa"
+hash = "fab0f8da4e12ee8f400a8f8a95619dc3aa6881ea0821a25f5cc6f2c77ecacf45"
 metafile = true
 
 [[files]]
 file = "mods/better-block-entities.pw.toml"
-hash = "727417105d4a840efbd7ca1479bb28dde527378f161179059ad1fbc4ec5ff409"
+hash = "5e7a8a550f9e143b502c46aaeb13c02ea4ab60195cf0afe4a3480730a6815ee7"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "e9d106c5c9ba19c6ddbbbd3b0bd411812ceb6284d264620e5b169223d616d4de"
+hash = "2b9727522c90a979eb9671ad7c5421443d91391b0697d1772146e6bfa19cb3c1"
 metafile = true
 
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
-hash = "ae61a93c7f90056aec5b5f86df387a802dcbfdb483d8f227b2fd8f9c936ce791"
+hash = "84d6a2b87db74408c8fd2fd15792bad981ffbab43e1ee96b79aabded2604141c"
 metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "b116e6218aeb033defa1385f8490ffdcbab19607d9af44f9563d17c61a5fe1d5"
+hash = "3d70571a3f55ab9d923addc371e87440286436b15141abf1ae780fa90dcbcf7d"
 metafile = true
 
 [[files]]
 file = "mods/exploitpreventer.pw.toml"
-hash = "566756aeee10877592163d0171355d36342cb208f7f292cc57a202b29246ab7f"
+hash = "f325320983399fdd463c39164393c6869c256c102f5664f1096785c06660ab81"
 metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "14f8e97b4d1c9e151848bd63ff0ed233c22a801420647ed4a02853e95ecdbea2"
+hash = "fb72a70cb53c63f1da4520c25c8a7d806cc1c733e827016615623b65d751852d"
 metafile = true
 
 [[files]]
@@ -119,67 +119,62 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "ec53ebbcc48f1d4cc867108ae60ec766414a9515ea5c6764b50d3153dc4780a0"
+hash = "a7f6a1543f41198911a8b1e5e059fa0c8003365ebd6c2314e2dfa0806aff300a"
 metafile = true
 
 [[files]]
 file = "mods/instapack.pw.toml"
-hash = "501fc0dc6feb3c9d26351f9508a7715f91ad1c5a9dddef34c94088e94fa5c97e"
+hash = "f83035be163456faaffe4aa69844d2c33ce9f2a66827c0d65eda6314a44d565f"
 metafile = true
 
 [[files]]
 file = "mods/ixeris.pw.toml"
-hash = "ad71feb6859b930ab26df35d4483863fe04b896b5aad831225a1faa389899dc0"
+hash = "3bb2439ed9e9fb3fa980112396aead7723bd206289b4055db74b3f560b472f7f"
 metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "9d8b32a7a672675288eacf988f380867d5b2e28d20a8e1eeacc0e3bcb4c1a054"
+hash = "b44f3ab71e52f1aaae97cf8644f2316042de8b7777d6b6794567c8c7d220bd2b"
 metafile = true
 
 [[files]]
 file = "mods/modernfix-mvus.pw.toml"
-hash = "8979291fdcfd8b9d8081fd41fde531e3e00d8b4809d304250e6b983e7d780745"
+hash = "3b3b9e886735bd8d8809954b7da8d1cca5b8186086379f129f0e4183470a7b2b"
 metafile = true
 
 [[files]]
 file = "mods/modmenu.pw.toml"
-hash = "9ffce57f86669cae56efc23d559c8c851ee07671a09b55ca48b4d74d109e2f33"
+hash = "3feb5af047a7aabdcbae76e59f0c6603c61ef093d19c44f6d3ad76b48272a6dc"
 metafile = true
 
 [[files]]
 file = "mods/moreculling.pw.toml"
-hash = "1af972224a9b637190ab7da2ebe70efb195b12c7ab644116803a4f23980435f1"
+hash = "b02c935ed3d808fb6bc3a89acb8ebe261ed175b86b2542d88d8b2c19240fc2f8"
 metafile = true
 
 [[files]]
-file = "mods/nvidium.pw.toml"
-hash = "bc6504110e6f7b6af7634545b302f416bf0499d42c1433a24ed8e063e4fdc6b5"
+file = "mods/placeholder-api.pw.toml"
+hash = "4d3d2ad41a037af6f78e2a6c2908c4098bb0b5c03ad0d2711a0c0c6df5e7a172"
 metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "fda738c33a116b576b1ed3868a05749c5695bee869eb5100bc093f4f561083f3"
+hash = "a37efb8198755739044800baa74f63b91cae2428f33e8e368e35f3c829c83947"
 metafile = true
 
 [[files]]
 file = "mods/rrls.pw.toml"
-hash = "31994ffe4ed8ab946c3e2ccbcef56801d355d2515bd84c437456179540fcd8a6"
+hash = "9aff010771d11ec9fe4980ff0d746cbca61854fc638daeef73c057f4fafb39bf"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "7e6902084042d602ac74669ee0c073e435e55027896baceb1ddd57e34070aca6"
+hash = "ad4ccf1c82ade67bbb45d98131e7a34c9ce97fb5a37a9a9d0eb6afbe373df3b2"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "030b5d78f368083d21588f5bd589e06c9ee74edb655188efdb67d9ef4846f0ac"
-metafile = true
-
-[[files]]
-file = "mods/yacl.pw.toml"
-hash = "efbd0171fc592b6c8f6b88532b881e04f25fc6955af7e2cba89ab605d56f655b"
+hash = "f561584f2ea7e3f9f5b5be73986e32b4c693cb8b0aaa987d936560051d953f55"
 metafile = true
 
 [[files]]

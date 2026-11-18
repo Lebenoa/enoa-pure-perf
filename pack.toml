@@ -1,16 +1,16 @@
 name = "Enoa's Pure Perf"
 author = "Lebenoa"
-version = "0.1.0"
+version = "26.3.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3f491961893936596426981b83be4edd320ea0c297589069ae1c0e4840800fc5"
+hash = "904c3bdace6f4bed2435b97363ac641b8d61290beaa9d3c705fe32d683c56c81"
 
 [versions]
 fabric = "0.20.1"
-minecraft = "26.2"
+minecraft = "26.3"
 
 [export]
 [export.norisk]

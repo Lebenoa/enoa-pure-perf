@@ -1,45 +1,43 @@
 # Enoa's Pure Perf
 
-A client-side Fabric modpack for Minecraft 26.2 focused on rendering and performance. ***Despite the name, Nvidium is the only NVIDIA-specific mod.***
+A client-side Fabric modpack for Minecraft 26.3 focused on performance.
 
 > [!NOTE]
-> `master` stays on Minecraft 26.2 to retain Nvidium and the other mods removed for compatibility with 26.3. For the newer pack, see the [26.3 branch](https://github.com/Lebenoa/enoa-pure-perf/tree/26.3) and its README.
-
-Prebuilt 26.2 packs are available for [Prism Launcher](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.2.1) and [NoRisk Client](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.2.1). The newer v0.3.0 release targets 26.3.
+> This branch targets Minecraft 26.3; `master` remains on 26.2. Pack version **26.3.2** is a pre-release for testing.
 
 ## Features
 
-- Render with Sodium; use Nvidium's alternative renderer on supported NVIDIA GPUs.
+- Use Sodium's optimized renderer.
 - Use client-side performance mods that stay out of gameplay's way.
 - Export the recorded mod versions to a `.mrpack` or a `.noriskpack` for import into a compatible launcher.
 
 ## `.mrpack` distribution
 
-InstaPack has third-party distribution disabled on CurseForge, so I'm not comfortable shipping a prebuilt `.mrpack` that bundles its jar. That's my choice, not a license — the mods still belong to their authors. The installer scripts build the standard `.mrpack` on your machine instead.
+InstaPack has third-party distribution disabled on CurseForge, so this pack's `.mrpack` references its CurseForge download URL instead of bundling the jar. This is the pack maintainer's choice, not a license — the mod still belongs to its author. Some launchers may require a manual download or reject the URL; Modrinth rejects the archive because `edge.forgecdn.net` is outside its allowed download hosts.
 
-My [packwiz fork](https://github.com/Lebenoa/packwiz/releases) supports `packwiz modrinth export --no-bundle`, which the prebuilt `.mrpack` uses to reference InstaPack by its CurseForge download URL instead of bundling its jar. Modrinth rejects CurseForge CDN URLs, launcher support varies, and launchers may show a provenance warning.
+The installer uses the [packwiz fork](https://github.com/Lebenoa/packwiz/releases) and `packwiz modrinth export --no-bundle` to preserve this policy.
 
 ## Installation
 
-### NoRisk Client (verified)
+### NoRisk Client
 
-Download `enoa-pure-perf.noriskpack` from the [26.2.1 release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.2.1) and import it into NoRisk Client.
+Download `enoa-pure-perf-26.3.2.noriskpack` from the [26.3.2 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.2) and import it into NoRisk Client.
 
-To build a NoRisk pack yourself, download and extract the [master ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/master.zip), then run this from the extracted folder with a [packwiz fork](https://github.com/Lebenoa/packwiz/releases) that supports `norisk export` on PATH:
+To build a NoRisk pack, download and extract the [26.3 branch ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip), then run this from the extracted folder with a [packwiz fork](https://github.com/Lebenoa/packwiz/releases) that supports `norisk export` on PATH:
 
 ```bash
-packwiz norisk export -o enoa-pure-perf.noriskpack
+packwiz norisk export -o enoa-pure-perf-26.3.2.noriskpack
 ```
 
 Import the resulting file into NoRisk Client. The export sets the profile icon configured in `pack.toml`; fork release **v0.0.2+** supports this command, but upstream packwiz does not.
 
-### Prism Launcher (verified) and other `.mrpack` launchers
+### Prism Launcher and other `.mrpack` launchers
 
-Download `enoa-pure-perf.mrpack` from the [26.2.1 release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.2.1) and import it into Prism Launcher or another launcher that accepts CurseForge download URLs. The v0.3.0 `.mrpack` is for 26.3.
+Download `enoa-pure-perf-26.3.2.mrpack` from the [26.3.2 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.2) and import it into Prism Launcher or another compatible launcher.
 
-To build the standard `.mrpack` locally instead, download the repository using **Code → Download ZIP**, or [download the master ZIP directly](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/master.zip). Extract it before running either installer; Git is not required.
+To build the standard `.mrpack` locally, download the repository using **Code → Download ZIP** while on the `26.3` branch, or [download the 26.3 branch ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip). Extract it before running either installer; Git is not required.
 
-- Targets Minecraft **26.2** and Fabric **0.20.1** (packwiz format **1.1.0**); Java **25 or later**, as required by the selected mods.
+- Targets Minecraft **26.3** and Fabric **0.20.1** (packwiz format **1.1.0**); Java **25 or later**, as required by the selected mods.
 - **Windows:** PowerShell 5.1 or later — its downloader and ZIP extraction commands are built in.
 - **Linux / macOS:** bash and curl, plus tar when the script must fetch the pack.
 - Internet access, and a launcher that imports `.mrpack` files.
@@ -61,12 +59,12 @@ The scripts reuse `packwiz` on PATH, or download fork release **v0.0.2** if none
 > [!TIP]
 > **Recommended: use the [fork release](https://github.com/Lebenoa/packwiz/releases) (v0.0.2 or later).** It can fetch InstaPack automatically and supports `packwiz norisk export` for NoRisk Client. If `packwiz` is already on PATH, the scripts reuse it without verifying that it is the fork; an upstream binary may require a manual download. See [Acknowledgments](#acknowledgments) for the API-key explanation.
 
-**With upstream packwiz:** if export requests a manual download, obtain [InstaPack 1.0.0 for Fabric 26.2](https://www.curseforge.com/minecraft/mc-mods/instapack/files/9099255) and follow packwiz's prompt before retrying. Do not assume a failed export produced a complete pack.
+**With upstream packwiz:** the `.mrpack` references InstaPack's CurseForge URL instead of bundling its jar. Some launchers may reject that host or require a manual download; follow the launcher prompt. Do not assume a failed import is complete.
 
 > [!NOTE]
 > After changing the pack metadata, run the installer again to generate a new `.mrpack`.
 
-After export succeeds, import `enoa-pure-perf.mrpack` into a compatible launcher, such as Prism Launcher or ATLauncher. Launch the imported Minecraft **26.2** / Fabric **0.20.1** instance.
+After export succeeds, import `enoa-pure-perf-26.3.2.mrpack` into a compatible launcher, such as Prism Launcher or ATLauncher. Launch the imported Minecraft **26.3** / Fabric **0.20.1** instance.
 
 
 ## Defaults
@@ -99,11 +97,10 @@ Honestly? [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimiz
 
 ## Mods
 
-All 23 mods, grouped by purpose. The Side column reproduces this pack's metadata (`client` or `both`); it is not a guarantee of server compatibility.
+All 21 mods, grouped by purpose. The Side column reproduces this pack's metadata (`client` or `both`); it is not a guarantee of server compatibility.
 
 | Mod | Side | What it does |
 |---|---|---|
-| **Performance** | | |
 | [Sodium](https://modrinth.com/mod/AANobbMI) | client | Replaces Minecraft's renderer with an optimized one for smoother gameplay. |
 | [Lithium](https://modrinth.com/mod/gvQqBUqZ) | both | Optimizes game logic (physics, mob AI, block ticks) without changing vanilla behavior. |
 | [FerriteCore](https://modrinth.com/mod/uXXizFIs) | both | Reduces Minecraft's memory usage. |
@@ -117,18 +114,13 @@ All 23 mods, grouped by purpose. The Side column reproduces this pack's metadata
 | [FastQuit](https://modrinth.com/mod/x1hIzbuY) | client | Lets you leave a world while saving finishes in the background. |
 | [Ixeris](https://modrinth.com/mod/p8RJPJIC) | client | Reduces input-polling overhead, especially with high-polling-rate mice on Windows. |
 | [InstaPack](https://www.curseforge.com/minecraft/mc-mods/instapack) | both | Optimizes resource reloads, skips unchanged server packs, and caches packs to avoid repeat downloads. |
-| **Rendering & visuals** | | |
-| [Nvidium](https://modrinth.com/mod/SfMw2IZN) | client | Replaces Sodium's terrain renderer on mesh-shader-capable NVIDIA GPUs (GTX 16-series and supported newer cards). |
-| **Interface & QoL** | | |
 | [Mod Menu](https://modrinth.com/mod/mOgUt4GM) | client | Browse installed mods and open their config screens from the title screen. |
 | [Reese's Sodium Options](https://modrinth.com/mod/Bh37bMuy) | client | Reorganized, searchable Sodium video settings screen. |
 | [Sodium Extra](https://modrinth.com/mod/PtjYWJkn) | client | Extra graphics toggles Sodium lacks (fog, animations, particles). |
 | [ExploitPreventer](https://modrinth.com/mod/VdINCTcD) | client | Blocks known client-side exploits. |
 | [Remove Reloading Screen](https://modrinth.com/mod/ZP7xHXtw) | client | Keeps the game accessible during resource reloads, retaining a progress bar. |
-| **Libraries & dependencies** | | |
 | [Fabric API](https://modrinth.com/mod/P7dR8mSH) | both | Core APIs most Fabric mods depend on. |
 | [Cloth Config API](https://modrinth.com/mod/9s6osm5g) | both | Config screen library used by other mods. |
-| [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/1eAoo2KR) | client | Config screen library used by other mods. |
 
 ## Acknowledgments
 

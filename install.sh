@@ -22,10 +22,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 if [ ! -f "$SCRIPT_DIR/pack.toml" ]; then
     echo "No pack.toml next to the script - fetching pack metadata from GitHub..."
     TMP="$(mktemp -d)"
-    curl -L -o "$TMP/pack.tar.gz" "https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/master.tar.gz"
+    curl -L -o "$TMP/pack.tar.gz" "https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.tar.gz"
     tar -xzf "$TMP/pack.tar.gz" -C "$TMP"
     mkdir -p "$SCRIPT_DIR"
-    cp -r "$TMP"/enoa-pure-perf-master/* "$SCRIPT_DIR/"
+    cp -r "$TMP"/enoa-pure-perf-26.3/* "$SCRIPT_DIR/"
     rm -rf "$TMP" "$SCRIPT_DIR/install.sh"
     echo "Pack fetched into $SCRIPT_DIR"
 fi
@@ -53,8 +53,8 @@ PACKWIZ="${PACKWIZ_BIN:-$PACKWIZ}"
 
 # 2. Export the pack from this repo's checkout.
 echo "Exporting .mrpack..."
-"$PACKWIZ" modrinth export -o enoa-pure-perf.mrpack
+"$PACKWIZ" modrinth export --no-bundle -o enoa-pure-perf-26.3.2.mrpack
 
 echo ""
-echo "Done: $(pwd)/enoa-pure-perf.mrpack"
+echo "Done: $(pwd)/enoa-pure-perf-26.3.2.mrpack"
 echo "Import it into a Modrinth-compatible launcher (Prism, ATLauncher, ...)."

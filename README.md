@@ -1,26 +1,9 @@
 # Enoa's Pure Perf
-A client-side Fabric modpack for Minecraft 26.3 focused on performance.
-> This branch targets Minecraft 26.3; `master` remains on 26.2. Pack version **26.3.3** contains the Sodium compatibility fix.
-- Use Sodium's optimized renderer.
-InstaPack has third-party distribution disabled on CurseForge, so this pack's `.mrpack` references its CurseForge download URL instead of bundling the jar. This is the pack maintainer's choice, not a license — the mod still belongs to its author. Some launchers may require a manual download or reject the URL; Modrinth rejects the archive because `edge.forgecdn.net` is outside its allowed download hosts.
-The installer uses the [packwiz fork](https://github.com/Lebenoa/packwiz/releases) and `packwiz modrinth export --no-bundle` to preserve this policy.
-### NoRisk Client
-Download `enoa-pure-perf-26.3.3.noriskpack` from the [26.3.3 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.3) and import it into NoRisk Client.
-To build a NoRisk pack, download and extract the [26.3 branch ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip), then run this from the extracted folder with a [packwiz fork](https://github.com/Lebenoa/packwiz/releases) that supports `norisk export` on PATH:
-packwiz norisk export -o enoa-pure-perf-26.3.3.noriskpack
-### Prism Launcher and other `.mrpack` launchers
-Download `enoa-pure-perf-26.3.3.mrpack` from the [26.3.3 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.3) and import it into Prism Launcher or another compatible launcher.
-To build the standard `.mrpack` locally, download the repository using **Code → Download ZIP** while on the `26.3` branch, or [download the 26.3 branch ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip). Extract it before running either installer; Git is not required.
-- Targets Minecraft **26.3** and Fabric **0.20.1** (packwiz format **1.1.0**); Java **25 or later**, as required by the selected mods.
-The scripts reuse `packwiz` on PATH, or download fork release **v0.0.2** if none is found (Windows selects the amd64 build; Unix selects by OS and architecture), then export `enoa-pure-perf-26.3.3.mrpack`. They do not install a launcher or Minecraft.
-**With upstream packwiz:** the `.mrpack` references InstaPack's CurseForge URL instead of bundling its jar. Some launchers may reject that host or require a manual download; follow the launcher prompt. Do not assume a failed import is complete.
-After export succeeds, import `enoa-pure-perf-26.3.3.mrpack` into a compatible launcher, such as Prism Launcher or ATLauncher. Launch the imported Minecraft **26.3** / Fabric **0.20.1** instance.
-All 21 mods, grouped by purpose. The Side column reproduces this pack's metadata (`client` or `both`); it is not a guarantee of server compatibility.
 
 A client-side Fabric modpack for Minecraft 26.3 focused on performance.
 
 > [!NOTE]
-> This branch targets Minecraft 26.3; `master` remains on 26.2. Pack version **26.3.2** is a pre-release for testing.
+> This branch targets Minecraft 26.3; `master` remains on 26.2. Pack version **26.3.3** contains the Sodium compatibility fix.
 
 ## Features
 
@@ -38,19 +21,19 @@ The installer uses the [packwiz fork](https://github.com/Lebenoa/packwiz/release
 
 ### NoRisk Client
 
-Download `enoa-pure-perf-26.3.2.noriskpack` from the [26.3.2 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.2) and import it into NoRisk Client.
+Download `enoa-pure-perf-26.3.3.noriskpack` from the [26.3.3 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.3) and import it into NoRisk Client.
 
 To build a NoRisk pack, download and extract the [26.3 branch ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip), then run this from the extracted folder with a [packwiz fork](https://github.com/Lebenoa/packwiz/releases) that supports `norisk export` on PATH:
 
 ```bash
-packwiz norisk export -o enoa-pure-perf-26.3.2.noriskpack
+packwiz norisk export -o enoa-pure-perf-26.3.3.noriskpack
 ```
 
 Import the resulting file into NoRisk Client. The export sets the profile icon configured in `pack.toml`; fork release **v0.0.2+** supports this command, but upstream packwiz does not.
 
 ### Prism Launcher and other `.mrpack` launchers
 
-Download `enoa-pure-perf-26.3.2.mrpack` from the [26.3.2 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.2) and import it into Prism Launcher or another compatible launcher.
+Download `enoa-pure-perf-26.3.3.mrpack` from the [26.3.3 pre-release](https://github.com/Lebenoa/enoa-pure-perf/releases/tag/26.3.3) and import it into Prism Launcher or another compatible launcher.
 
 To build the standard `.mrpack` locally, download the repository using **Code → Download ZIP** while on the `26.3` branch, or [download the 26.3 branch ZIP](https://github.com/Lebenoa/enoa-pure-perf/archive/refs/heads/26.3.zip). Extract it before running either installer; Git is not required.
 
@@ -71,7 +54,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 bash install.sh
 ```
 
-The scripts reuse `packwiz` on PATH, or download fork release **v0.0.2** if none is found (Windows selects the amd64 build; Unix selects by OS and architecture), then export `enoa-pure-perf.mrpack`. They do not install a launcher or Minecraft.
+The scripts reuse `packwiz` on PATH, or download fork release **v0.0.2** if none is found (Windows selects the amd64 build; Unix selects by OS and architecture), then export `enoa-pure-perf-26.3.3.mrpack`. They do not install a launcher or Minecraft.
 
 > [!TIP]
 > **Recommended: use the [fork release](https://github.com/Lebenoa/packwiz/releases) (v0.0.2 or later).** It can fetch InstaPack automatically and supports `packwiz norisk export` for NoRisk Client. If `packwiz` is already on PATH, the scripts reuse it without verifying that it is the fork; an upstream binary may require a manual download. See [Acknowledgments](#acknowledgments) for the API-key explanation.
@@ -81,7 +64,7 @@ The scripts reuse `packwiz` on PATH, or download fork release **v0.0.2** if none
 > [!NOTE]
 > After changing the pack metadata, run the installer again to generate a new `.mrpack`.
 
-After export succeeds, import `enoa-pure-perf-26.3.2.mrpack` into a compatible launcher, such as Prism Launcher or ATLauncher. Launch the imported Minecraft **26.3** / Fabric **0.20.1** instance.
+After export succeeds, import `enoa-pure-perf-26.3.3.mrpack` into a compatible launcher, such as Prism Launcher or ATLauncher. Launch the imported Minecraft **26.3** / Fabric **0.20.1** instance.
 
 
 ## Defaults

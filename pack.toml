@@ -1,12 +1,12 @@
 name = "Enoa's Pure Perf"
 author = "Lebenoa"
-version = "26.3.2"
+version = "26.3.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "904c3bdace6f4bed2435b97363ac641b8d61290beaa9d3c705fe32d683c56c81"
+hash = "a420aaeee2a3e60317d7eff685bcd553f17f3e48591a60b1730b32b20bedadac"
 
 [versions]
 fabric = "0.20.1"

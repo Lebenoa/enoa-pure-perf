@@ -53,8 +53,8 @@ PACKWIZ="${PACKWIZ_BIN:-$PACKWIZ}"
 
 # 2. Export the pack from this repo's checkout.
 echo "Exporting .mrpack..."
-"$PACKWIZ" modrinth export --no-bundle -o enoa-pure-perf-26.3.2.mrpack
+"$PACKWIZ" modrinth export --no-bundle -o enoa-pure-perf-26.3.3.mrpack
 
 echo ""
-echo "Done: $(pwd)/enoa-pure-perf-26.3.2.mrpack"
+echo "Done: $(pwd)/enoa-pure-perf-26.3.3.mrpack"
 echo "Import it into a Modrinth-compatible launcher (Prism, ATLauncher, ...)."

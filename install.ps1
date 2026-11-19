@@ -51,8 +51,8 @@ if ($existing) {
 
 # 2. Export the pack from this repo's checkout.
 Write-Host "Exporting .mrpack..."
-& $packwiz modrinth export --no-bundle -o enoa-pure-perf-26.3.2.mrpack
+& $packwiz modrinth export --no-bundle -o enoa-pure-perf-26.3.3.mrpack
 if ($LASTEXITCODE -ne 0) { throw "packwiz export failed." }
 
-Write-Host "`nDone: $PWD\enoa-pure-perf-26.3.2.mrpack" -ForegroundColor Green
+Write-Host "`nDone: $PWD\enoa-pure-perf-26.3.3.mrpack" -ForegroundColor Green
 Write-Host "Import it into a Modrinth-compatible launcher (Prism Launcher, ATLauncher, etc)."
